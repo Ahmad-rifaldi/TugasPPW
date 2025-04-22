@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Data Siswa</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    .table-container {
+      max-width: 800px;
+      margin: 0 auto;
+      overflow-x: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    thead {
+      background-color: #009879;
+      color: white;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    tbody tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    @media (max-width: 600px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      thead {
+        display: none;
+      }
+
+      td {
+        position: relative;
+        padding-left: 50%;
+        text-align: left;
+      }
+
+      td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        font-weight: bold;
+        color: #555;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Data Siswa</h2>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Nama</th>
+          <th>NIM</th>
+          <th>Jurusan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="No">1</td>
+          <td data-label="Nama">Ahmad Rifaldi</td>
+          <td data-label="NIM">422310009</td>
+          <td data-label="Jurusan">Teknik Informatika</td>
+        </tr>
+        <tr>
+          <td data-label="No">2</td>
+          <td data-label="Nama">Boby Hosea</td>
+          <td data-label="NIM">987654321</td>
+          <td data-label="Jurusan">Sistem Informasi</td>
+        </tr>
+        <tr>
+          <td data-label="No">3</td>
+          <td data-label="Nama">Haji Reza Pahlevi</td>
+          <td data-label="NIM">422310019</td>
+          <td data-label="Jurusan">Teknik Komputer</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <hr style="margin: 40px 0;">
+
+  <h2>Gambar Mahasiswa</h2>
+  <figure>
+    <img src="image5.jpg" alt="Foto Mahasiswa" width="300">
+    <figcaption style="margin-top: 10px;">Gambar 1: Mahasiswa Sedang Berdiskusi</figcaption>
+  </figure>
+
+</body>
+</html>
+
