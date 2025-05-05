@@ -1,172 +1,83 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sportaways - Toko Sepatu Futsal</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 
   <style>
-    /* === Global Style === */
     body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background:
-        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-        url('images/grafiti.jpg') center/cover no-repeat fixed;
-      color: white;
+      font-family: 'Poppins', sans-serif;
     }
-
-    /* === Navbar Style === */
-    .navbar {
-      background-color: rgba(0, 0, 0, 0.7);
-    }
-
-    .navbar-brand,
-    .nav-link {
-      color: white !important;
-      font-weight: bold;
-    }
-
-    .nav-link:hover {
-      color: #ffc107 !important;
-    }
-
-    /* === Hero Section === */
-    .hero {
-      background: url('contoh-hero.jpg') center/cover no-repeat;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-    }
-
-    .hero p {
-      font-size: 1.3rem;
-      margin-top: 10px;
-      margin-bottom: 30px;
-    }
-
-    .hero .btn {
-      padding: 12px 30px;
-      font-size: 1.1rem;
-    }
-
-    /* === Section Title === */
     .section-title {
-      font-size: 2.5rem;
-      font-weight: bold;
-      text-align: center;
-      margin-top: 50px;
-      color: #fff;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-    }
-
-    /* === Product Card === */
-    .product-card {
-      background-color: rgba(255, 255, 255, 0.9);
-      border: none;
-      border-radius: 15px;
-      overflow: hidden;
-      transition: transform 0.3s;
-    }
-
-    .product-card:hover {
-      transform: scale(1.05);
-    }
-
-    .product-card img {
-      height: 250px;
-      object-fit: cover;
-    }
-
-    .product-card .card-body {
-      color: #333;
-    }
-
-    /* === Footer === */
-    .footer {
-      background-color: rgba(0, 0, 0, 0.8);
-      color: white;
-      padding: 20px 0;
-      text-align: center;
-    }
-
-    .footer a {
-      color: #ffc107;
-      text-decoration: none;
-    }
-
-    .footer a:hover {
-      text-decoration: underline;
+      font-weight: 600;
     }
   </style>
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark px-4">
-    <a class="navbar-brand" href="#">Sportaways</a>
-    <div class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#">Beranda</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Produk</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
-      </ul>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+    <div class="container">
+      <a class="navbar-brand" href="gambar.html">Sportaways</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Produk</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Selamat Datang di Sportaways</h1>
-      <p>Temukan sepatu futsal terbaik untuk performa maksimal!</p>
-      <a href="#" class="btn btn-primary btn-lg">Kepoin Sekarang</a>
+  <section class="bg-white text-dark d-flex align-items-center justify-content-center text-center" style="min-height: 80vh;">
+    <div class="container">
+      <h1 class="display-4 fw-semibold">Selamat Datang di Sportaways</h1>
+      <p class="lead">Temukan sepatu futsal terbaik untuk performa maksimal!</p>
+      <a href="#" class="btn btn-dark btn-lg mt-3">Kepoin Sekarang</a>
     </div>
   </section>
 
   <!-- Produk Unggulan -->
   <div class="container py-5">
-    <h2 class="section-title">KATEGORI SEPATU</h2>
+    <h2 class="text-center section-title mb-4">KATEGORI SEPATU</h2>
     <div class="row mt-4">
 
       <div class="col-md-4 mb-4">
-        <div class="card product-card">
+        <div class="card h-100 text-center">
           <img src="images/specs.jpg" class="card-img-top" alt="Specs">
           <div class="card-body">
             <h5 class="card-title">LightSpeed Terbaru 2025</h5>
             <p class="card-text">Suitable for Pivots</p>
-            <a href="../pertemuan_ 4/produksepatuspecs.html" class="btn btn-primary">Cek Detail</a>
+            <a href="../pertemuan_ 4/produksepatuspecs.html" class="btn btn-dark">Cek Detail</a>
           </div>
         </div>
       </div>
 
       <div class="col-md-4 mb-4">
-        <div class="card product-card">
+        <div class="card h-100 text-center">
           <img src="images/ortuseight.jpg" class="card-img-top" alt="Ortuseight">
           <div class="card-body">
             <h5 class="card-title">Jogosala Terbaru 2025</h5>
             <p class="card-text">Suitable for Anchors</p>
-            <a href="../pertemuan_ 4/produksepatuortus.html" class="btn btn-primary">Cek Detail</a>
+            <a href="../pertemuan_ 4/produksepatuortus.html" class="btn btn-dark">Cek Detail</a>
           </div>
         </div>
       </div>
 
       <div class="col-md-4 mb-4">
-        <div class="card product-card">
+        <div class="card h-100 text-center">
           <img src="images/gambar7.jpg" class="card-img-top" alt="Mills">
           <div class="card-body">
             <h5 class="card-title">Mills Paling Top</h5>
             <p class="card-text">Perfect for Style</p>
-            <a href="../pertemuan_ 4/produksepatumills.html" class="btn btn-primary">Cek Detail</a>
+            <a href="../pertemuan_ 4/produksepatumills.html" class="btn btn-dark">Cek Detail</a>
           </div>
         </div>
       </div>
@@ -174,10 +85,11 @@
     </div>
   </div>
 
-  <div class="footer">
-    <p>&copy; 2025 Sportaways - Toko Sepatu Futsal.
-    <p><a href="#">Kebijakan Privasi</a> | <a href="#">Syarat & Ketentuan</a></p>
-  </div>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Sportaways - Toko Sepatu Futsal.</p>
+    <p><a href="#" class="text-warning">Kebijakan Privasi</a> | <a href="#" class="text-warning">Syarat & Ketentuan</a></p>
+  </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
